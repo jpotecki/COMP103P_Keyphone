@@ -1,3 +1,8 @@
+<!--
+ * Written by Janos Potecki 02/2015
+ * UCL Computer Science 
+ * janospotecki@outlook.com
+-->
 <ion-view title="New List">
     <ion-content overflow-scroll="true" padding="true" class="has-header">
         <h3>Select your words</h3>
@@ -7,19 +12,20 @@
                 <input type="text" placeholder="">
             </label>
         </ion-list>
-        <ion-list></ion-list>
-        <ion-list></ion-list>
-        <form class="list"></form>
-        <form class="list">
-            <ion-checkbox>horse</ion-checkbox>
-            <ion-checkbox>hat</ion-checkbox>
-            <ion-checkbox>ring</ion-checkbox>
-        </form>
-        <form class="list"></form>
-        <div class="button-bar">
-            <a ui-sref="settings" class="button button-positive button-clear button-block  icon ion-close-round"></a>
-            <a ui-sref="enterListName" class="button button-positive button-clear button-block  icon ion-checkmark-round"></a>
+        <div class="card">
+            <form class="list">
+                <ion-checkbox class="positive">horse</ion-checkbox>
+                <ion-checkbox class="positive">hat</ion-checkbox>
+                <ion-checkbox class="positive">ring</ion-checkbox>
+            </form>
         </div>
+        
         <form class="list"></form>
+        <div class="bar bar-footer bar-clear">
+            <div class="button-bar">
+                <a ui-sref="settings" class="button button-positive button-clear icon ion-close-round pull-right"></a>
+                <a ui-sref="enterListName" class="button button-positive button-clear icon ion-checkmark-round"></a>
+            </div>
+        </div>
     </ion-content>
 </ion-view>

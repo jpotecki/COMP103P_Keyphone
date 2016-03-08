@@ -1,0 +1,12 @@
+/*
+ * Written by Janos Potecki 02/2015
+ * UCL Computer Science 
+ * janospotecki@outlook.com
+ */
+
+ .jp-footer{
+    height: 50px !important; 
+    vertical-align: top;
+    padding-top: 0;
+    margin-top: 0;
+}
