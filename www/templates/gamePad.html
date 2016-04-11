@@ -1,0 +1,39 @@
+<ion-view title="Click the correct letter">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <div style="text-align:center;">
+            <a ng-click="playImage(word)">
+                <img ng-src="data/img/{{word}}.jpg" width="40%" height="auto">
+            </a>
+        </div>
+        <div class="button-bar">
+            <a ng-click="checkChar(chars[0], 0)" ng-style="styles[0]"  ng-class="
+            showIcon(chars[0]) ? 'ion-volume-medium' : ' '"
+            class="button button-stable button-block"> {{chars[0]}}
+            </a>
+            <a ng-click="checkChar(chars[1], 1)" ng-style="styles[1]" ng-class="
+            showIcon(chars[1]) ? 'ion-volume-medium' : ' '"  class="button button-stable button-block"> {{chars[1]}}</a>
+            <a ng-click="checkChar(chars[2], 2)" ng-style="styles[2]" ng-class="
+            showIcon(chars[2]) ? 'ion-volume-medium' : ' '"  class="button button-stable button-block"> {{chars[2]}}</a>
+        </div>
+        <div class="button-bar">
+            <a ng-click="checkChar(chars[3], 3)" ng-style="styles[3]" ng-class="
+            showIcon(chars[3]) ? 'ion-volume-medium' : ' '"  class="button button-stable button-block"> {{chars[3]}}</a>
+            <a ng-click="checkChar(chars[4], 4)" ng-style="styles[4]" ng-class="
+            showIcon(chars[4]) ? 'ion-volume-medium' : ' '"  class="button button-stable button-block"> {{chars[4]}}</a>
+            <a ng-click="checkChar(chars[5], 5)" ng-style="styles[5]" ng-class="
+            showIcon(chars[5]) ? 'ion-volume-medium' : ' '"  class="button button-stable button-block"> {{chars[5]}}</a>
+        </div>
+        <div class="button-bar">
+            <a ng-click="checkChar(chars[6], 6)" ng-style="styles[6]" ng-class="
+            showIcon(chars[6]) ? 'ion-volume-medium' : ' '"  class="button button-stable button-block"> {{chars[6]}}</a>
+            <a ng-click="checkChar(chars[7], 7)" ng-style="styles[7]" ng-class="
+            showIcon(chars[7]) ? 'ion-volume-medium' : ' '"  class="button button-stable button-block"> {{chars[7]}}</a>
+            <a ng-click="checkChar(chars[8], 8)" ng-style="styles[8]" ng-class="
+            showIcon(chars[8]) ? 'ion-volume-medium' : ' '"  class="button button-stable button-block"> {{chars[8]}}</a>
+        </div>
+        <a class="button button-stable button-block" ng-hide="!nextModal" ng-click="next()">Next</a>
+    </ion-content>
+</ion-view>

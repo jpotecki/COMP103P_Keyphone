@@ -1,9 +1,10 @@
 <ion-view title="Choose list">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
     <ion-content overflow-scroll="true" padding="true" class="has-header">
-        <form class="list"></form>
-        <form class="list"></form>
-        <a ui-sref="cat" class="button button-stable button-block ">List1</a>
-        <button class="button button-stable button-block ">List2</button>
-        <button class="button button-stable button-block ">List3</button>
+        <a ng-repeat="list in lists" ng-click="chosenList(list._id)" class="button button-stable button-block ">
+        {{list.name}}</a>
+
     </ion-content>
 </ion-view>

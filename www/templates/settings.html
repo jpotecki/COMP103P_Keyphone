@@ -1,17 +1,26 @@
 <ion-view title="Settings">
-    <ion-content overflow-scroll="true" padding="true" class="has-header">
-        <h3>Choose your list</h3>
-        <form class="list">
-            <ion-radio>Animals</ion-radio>
-            <ion-radio>Buildings</ion-radio>
-            <ion-radio>Countries</ion-radio>
-        </form>
-        <form class="list"></form>
-        <div class="button-bar">
-            <button class="button button-stable button-block  icon ion-close"></button>
-            <a ui-sref="editList" class="button button-stable button-block  icon ion-compose"></a>
-            <a ui-sref="addList" class="button button-stable button-block  icon ion-plus"></a>
-        </div>
-        <ion-list></ion-list>
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-content overflow-scroll="true" padding="true" class="has-header has-footer">
+        <h4>Activate Speak Word Controll</h4>
+        <label class="toggle"
+         ng-click="clickWordSpeak()">
+            <input ng-checked="settings.speakCheck" type="checkbox">
+            <div class="track">
+                <div class="handle"></div>
+            </div>
+        </label>
+        <h3 ng-hide="!lists.length">Choose your list</h3>
+        <h3 ng-hide="lists.length"> No Lists </h3>
+            <div ng-repeat="list in lists">
+                <ion-radio ng-click="select({{list._id}})">{{list.name}}</ion-radio>
+            </div>
     </ion-content>
+    <ion-footer-bar class="bar footer-bar footer-button">
+        <a ng-click="deleteList()" ng-hide="!lists.length" class="button button-positive button-outline icon ion-trash-b"> Delete</a>
+        <a ng-click="editList()" ng-hide="!lists.length" class="button button-positive button-outline icon ion-compose"> Edit</a>
+        <a ng-click="add()" class="button button-positive button-outline icon ion-plus"> Add</a>
+        <a ng-click="delete()" ng-hide="!lists.length" class="button button-positive button-assertive button-outline icon ion-clean"> Clear All DATA</a>
+    </ion-footer-bar>
 </ion-view>
