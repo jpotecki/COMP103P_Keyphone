@@ -1,3 +1,9 @@
+/* Written by Janos Potecki
+ * University College London Term 2/3 - 2015/2016
+ * for Course: COMP103P
+ * www.github.com/jpotecki
+ * janos dot potecki dot 15 et ucl dot ac dot uk
+ */
 angular.module('app.routes', [])
 
 .config(function($stateProvider, $urlRouterProvider) {
@@ -7,137 +13,125 @@ angular.module('app.routes', [])
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
   $stateProvider
-    
-  
 
-      .state('summary', {
-    url: '/page2',
-    templateUrl: 'templates/summary.html',
-    controller: 'summaryCtrl'
+  .state('app', {
+      url: '/app',
+      abstract: true,
+      templateUrl: 'templates/menu.html',
+      controller: 'AppCtrl',
   })
 
-  .state('correct', {
-    url: '/page3',
-    templateUrl: 'templates/correct.html',
-    controller: 'correctCtrl'
+  .state('app.start', {
+    url: '/start',
+    views : {
+        'menuContent' : {
+            templateUrl: 'templates/start.html',
+            controller: 'startCtrl'
+        }
+    }
   })
 
-  .state('incorrect', {
-    url: '/page4',
-    templateUrl: 'templates/incorrect.html',
-    controller: 'incorrectCtrl'
+  .state('app.dailyUse', {
+    url: '/dailyUse',
+    views : {
+        'menuContent' : {
+            templateUrl: 'templates/dailyUse.html',
+            controller: 'dailyUseCtrl'
+        }
+    }
   })
 
-  .state('help', {
-    url: '/page5',
-    templateUrl: 'templates/help.html',
-    controller: 'helpCtrl'
-  })
-
-  .state('keyphone', {
-    url: '/page8',
-    templateUrl: 'templates/keyphone.html',
-    controller: 'keyphoneCtrl'
-  })
-
-  .state('dailyUse', {
-    url: '/page10',
-    templateUrl: 'templates/dailyUse.html',
-    controller: 'dailyUseCtrl'
-  })
-
-  .state('chooseList', {
+  .state('app.chooseList', {
     url: '/page11',
-    templateUrl: 'templates/chooseList.html',
-    controller: 'chooseListCtrl'
+    views : {
+        'menuContent' : {
+            templateUrl: 'templates/chooseList.html',
+            controller: 'chooseListCtrl'
+        }
+    }
   })
 
-  .state('cat', {
+  .state('app.game1', {
     url: '/page9',
-    templateUrl: 'templates/cat.html',
-    controller: 'catCtrl'
+    views : {
+        'menuContent' : {
+            templateUrl: 'templates/game1.html',
+            controller: 'catCtrl'
+        }
+    }
   })
 
-  .state('catCorrect', {
-    url: '/page12',
-    templateUrl: 'templates/catCorrect.html',
-    controller: 'catCorrectCtrl'
+  .state('app.gamePad', {
+    url: '/gamePad',
+    views : {
+        'menuContent' : {
+            templateUrl: 'templates/gamePad.html',
+            controller: 'gamePad'
+        }
+    }
   })
 
-  .state('dog', {
-    url: '/page13',
-    templateUrl: 'templates/dog.html',
-    controller: 'dogCtrl'
+  .state('app.settings', {
+    url: '/settings',
+    views : {
+        'menuContent' : {
+            templateUrl: 'templates/settings.html',
+            controller: 'settingsCtrl'
+        }
+    }
   })
 
-  .state('dogNotCorrect', {
-    url: '/page14',
-    templateUrl: 'templates/dogNotCorrect.html',
-    controller: 'dogNotCorrectCtrl'
+  .state('app.editList', {
+    url: '/editList/:ListID',
+    views : {
+        'menuContent' : {
+            templateUrl: 'templates/editList.html',
+            controller: 'editListCtrl'
+        }
+    }
   })
 
-  .state('dogCorrect', {
-    url: '/page15',
-    templateUrl: 'templates/dogCorrect.html',
-    controller: 'dogCorrectCtrl'
+  .state('app.addList', {
+    url: '/addList',
+    views : {
+        'menuContent' : {
+            templateUrl: 'templates/addList.html',
+            controller: 'addListCtrl'
+        }
+    }
   })
 
-  .state('dogNotCorrect2', {
-    url: '/page16',
-    templateUrl: 'templates/dogNotCorrect2.html',
-    controller: 'dogNotCorrect2Ctrl'
-  })
-
-  .state('catNotcorrect', {
-    url: '/page17',
-    templateUrl: 'templates/catNotcorrect.html',
-    controller: 'catNotcorrectCtrl'
-  })
-
-  .state('catNotCorrect2', {
-    url: '/page18',
-    templateUrl: 'templates/catNotCorrect2.html',
-    controller: 'catNotCorrect2Ctrl'
-  })
-
-  .state('settings', {
-    url: '/page19',
-    templateUrl: 'templates/settings.html',
-    controller: 'settingsCtrl'
-  })
-
-  .state('page20', {
-    url: '/page20',
-    templateUrl: 'templates/page20.html',
-    controller: 'page20Ctrl'
-  })
-
-  .state('editList', {
-    url: '/page21',
-    templateUrl: 'templates/editList.html',
-    controller: 'editListCtrl'
-  })
-
-  .state('addList', {
-    url: '/page22',
-    templateUrl: 'templates/addList.html',
-    controller: 'addListCtrl'
-  })
-
-  .state('addList2', {
-    url: '/page23',
-    templateUrl: 'templates/addList2.html',
-    controller: 'addList2Ctrl'
-  })
-
-  .state('addWords', {
+  .state('app.addWords', {
     url: '/page24',
-    templateUrl: 'templates/addWords.html',
-    controller: 'addWordsCtrl'
+    views : {
+        'menuContent' : {
+            templateUrl: 'templates/addWords.html',
+            controller: 'addWordsCtrl'
+        }
+    }
   })
 
-$urlRouterProvider.otherwise('/page8')
+  .state('app.speakCheck', {
+      url: '/speakCheck',
+      views : {
+          'menuContent' : {
+              templateUrl : 'templates/speakCheck.html',
+              controller : 'speakCheckCtrl'
+          }
+      }
+  })
 
-  
+  .state('app.summary', {
+      url : '/summary',
+      views : {
+          'menuContent' : {
+              templateUrl : 'templates/summary.html',
+              controller : 'summaryCtrl'
+          }
+      }
+  })
+// TODO add a router for the statistics website
+
+$urlRouterProvider.otherwise('/app/start')
 
 });
