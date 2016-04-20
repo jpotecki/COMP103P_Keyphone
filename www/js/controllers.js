@@ -17,8 +17,7 @@ angular.module('app.controllers', [])
 })
 
 .controller('startCtrl', function($scope, $window) {
-    $scope.size = $window.innerWidth;
-    $scope.size2= $window.outerWidth;
+    //$scope.size = $window.innerWidth;
 })
 
 .controller('dailyUseCtrl', function($scope, $ionicPlatform, $audioPlayer, $localstorage, $key_data) {
@@ -312,7 +311,7 @@ angular.module('app.controllers', [])
     }
 })
 
-.controller('settingsCtrl', function($scope, $ionicHistory, $localstorage, $state, $window) {
+.controller('manageCtrl', function($scope, $ionicHistory, $localstorage, $state, $window) {
     $scope.delete = function() {
         localStorage.clear();
         $ionicHistory.clearCache();
@@ -342,7 +341,6 @@ angular.module('app.controllers', [])
 
     $scope.select = function(ListID) {
         selected = ListID;
-        console.log(selected);
     }
 
      $scope.editList = function() {
@@ -357,11 +355,6 @@ angular.module('app.controllers', [])
     $scope.deleteList = function() {
         localStorage.removeItem(selected);
         $window.location.reload();
-    }
-
-    $scope.clickWordSpeak = function() {
-        $scope.settings.speakCheck = !$scope.settings.speakCheck;
-        $localstorage.setObject('settings', $scope.settings);
     }
 })
 
@@ -458,6 +451,8 @@ angular.module('app.controllers', [])
         $state.go("app.settings");
     }
 })
+
+
 
 .controller('StatCtrl', function($scope, $localstorage, $key_data, $ionicPlatform) {
     $ionicPlatform.ready(function(){
@@ -572,4 +567,11 @@ angular.module('app.controllers', [])
             data: $scope.DailyUseCharStatistics,
         }]
     };
+})
+
+.controller('settingsCtrl', function($localstorage, $scope){
+    $scope.clickWordSpeak = function() {
+        $scope.settings.speakCheck = !$scope.settings.speakCheck;
+        $localstorage.setObject('settings', $scope.settings);
+    }
 })
