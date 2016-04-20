@@ -21,7 +21,6 @@ angular.module('app.controllers', [])
 })
 
 .controller('dailyUseCtrl', function($scope, $ionicPlatform, $audioPlayer, $localstorage, $key_data) {
-    // TODO: dailyUse time mesurer is not working
     var data;
     var session;
     $scope.$on('$ionicView.enter', function(){
@@ -37,6 +36,7 @@ angular.module('app.controllers', [])
             session.char[key - 1]++;
             $audioPlayer.play(char, key);
             // update session the database
+            session.end = new Date();
             data = $key_data.updateDailyUse(data, session);
             $localstorage.saveData(data);
         }
