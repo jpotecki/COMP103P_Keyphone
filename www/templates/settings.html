@@ -6,8 +6,12 @@
     <ion-nav-buttons side="left">
         <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
     </ion-nav-buttons>
+     <ion-nav-buttons side="right">
+    <a ui-sref="app.start" class="button button-icon ion-home"> </a>
+</ion-nav-buttons>
     <ion-content overflow-scroll="true" padding="true" class="has-header has-footer">
-        <h4 class="color2">Activate Speak Word Controll</h4>
+        <h4 class="color2">Activate Speak Word Control
+
         <label class="toggle toggle-calm"
          ng-click="clickWordSpeak()">
             <input ng-checked="settings.speakCheck" type="checkbox">
@@ -15,21 +19,6 @@
                 <div class="handle"></div>
             </div>
         </label>
-        <div class="spacetop2"></div>
-        <h3 class="color" ng-hide="!lists.length">Choose your list</h3>
-        <h3 class="color" ng-hide="lists.length"> No Lists </h3>
-        <div class="space5"></div>
-            <div ng-repeat="list in lists" class="liststyle">
-                <ion-radio ng-click="select({{list._id}})" class=" liststyle">{{list.name}}</ion-radio>
-            </div>
-    </ion-content>
-    <ion-footer-bar class="footer footer-bar footer-button" id="wrapper3">
-        <a ng-click="deleteList()" ng-hide="!lists.length" class="color4 icon ion-trash-b"> Delete</a>
-        <div class="space4"></div>
-        <a ng-click="editList()" ng-hide="!lists.length" class="color4 icon ion-compose"> Edit</a>
-        <div class="space4"></div>
-        <a ng-click="add()" class="color4 icon ion-plus"> Add</a>
-         <div class="space3"></div>
-        <a ng-click="delete()" ng-hide="!lists.length" class="color3 icon ion-clean"> Clear All DATA</a>
-    </ion-footer-bar>
+        </h4>
+       
 </ion-view>

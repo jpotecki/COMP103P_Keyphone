@@ -143,6 +143,16 @@ angular.module('app.routes', [])
       }
   })
 
+ .state('app.manage', {
+      url : '/manage',
+      views : {
+          'menuContent' : {
+              templateUrl : 'templates/manage.html',
+              controller : 'manageCtrl'
+          }
+      }
+  })
+
 $urlRouterProvider.otherwise('/app/start')
 
 });
