@@ -12,8 +12,6 @@ angular.module('app.services', [])
          * createData : function()
          *  Creates an obj Data
          *      {
-         *          int     numDailyUse
-         *          int     timeDailyUse
          *          obj     gamesArchive
          *          obj[]   dailyUseSessions
          *      }
@@ -81,7 +79,6 @@ angular.module('app.services', [])
          return {
              createData : function() {
                  var data = {};
-                 data.timeDailyUse = 0;
                  data.gamesArchive = [];
                  data.dailyUseSessions = [];
                  return data;
@@ -89,7 +86,7 @@ angular.module('app.services', [])
              createSession : function (){
                  var practise = {};
                  practise.begin = new Date();
-                 practise.end = 0;
+                 practise.end = new Date();
                  // create an array for each char
                  practise.char = Array.apply(null, Array(26)).map(function (x, i){return 0});
                  return practise;
@@ -103,12 +100,21 @@ angular.module('app.services', [])
                 return data.dailyUseSessions.length;
              },
              getTimeDailyUse : function(data) {
-                return data.timeDailyUse;
+                //return data.timeDailyUse;
              },
              getTimeDailyUseMinutes : function(data) {
-                var time =  data.timeDailyUse;
+                var time = 0;
+                sessions = data.dailyUseSessions;
+                for(var i = 0; i < sessions.length; i++){
+                    console.log(sessions[i].end);
+                    if(sessions[i].end == 0)
+                        continue;
+                    var begin = new Date (Date.parse(sessions[i].begin)).getTime();
+                    var end = new Date(Date.parse(sessions[i].end)).getTime();
+                    time += end - begin;
+                }
                 time /= 1000 * 60;
-                return Math.floor(time * 100) / 100
+                return Math.floor(time * 100) / 100;
              },
              getDailyUseArr : function(data) {
                  return data.dailyUseSessions;
