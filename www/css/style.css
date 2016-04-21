@@ -1,13 +1,14 @@
-/*TODO: Build wrapper for android z1*/
-.footer-button a.button.button-full {
+    .footer-button a.button.button-full {
     width:100%;
     margin-top: 0
 }
-.pane{
+
+.pane {
     background:url(../data/img/background1.png) no-repeat center center fixed;
     background-size: cover;
 }
-.liststyle{
+
+.liststyle {
     height:50px;
     font-size:15px;
     color:#63B8FF;
@@ -19,7 +20,8 @@
     border: 2px solid #C6E2FF;
     margin-bottom: 30px;
  }
-.circle{
+
+.circle {
     display:block;
     width:80px;
     height:80px;
@@ -34,13 +36,15 @@
     background:#F0F8FF;
     font-weight:bold
 }
-.circle:hover{
+
+.circle:hover {
     border:4px double #FFFFFF;
     color:#F0F8FF;
     text-decoration:none;
     background:#C6E2FF
 }
-.circle2{
+
+.circle2 {
     display:block;
     width:80px;
     height:80px;
@@ -55,13 +59,15 @@
     background:#F0F8FF;
     font-weight:bold
 }
-.circle2: hover{
+
+.circle2: hover {
     border:4px double #FFFFFF;
     color:#F0F8FF;
     text-decoration:none;
     background:#C6E2FF
 }
-.circle3{
+
+.circle3 {
     display:block;
     width:92px;
     height:92px;
@@ -77,19 +83,31 @@
     font-weight:bold;
     margin-left: 120px
 }
-.circle3:hover{
+
+.circle3:hover {
     border:4px double #FFFFFF;
     color:#F0F8FF;
     text-decoration:none;
     background:#C6E2FF}
-.space{margin-left: 20px}
+.space {
+    margin-left: 20px
+}
 
-.space2{margin-bottom: 10px}
+.space2 {
+    margin-bottom: 10px
+}
 
-.btn1{
-    font-size:13px;color:#63B8FF;text-align:center;text-decoration: none;background:#F0F8FF;border-radius: 5px; border: 2px solid #63B8FF;
+.btn1 {
+    font-size:13px;
+    color:#63B8FF;
+    text-align:center;
+    text-decoration: none;
+    background:#F0F8FF;
+    border-radius: 5px;
+    border: 2px solid #63B8FF;
  }
- .liststyle2{
+
+ .liststyle2 {
      font-size:15px;
      color:#63B8FF;
      text-align:center;
@@ -106,17 +124,24 @@
      border: 2px solid #63B8FF;
 }
 
-.btn4{
-
+.btn4 {
     background: transparent;
     border: none !important;
     font-size:0;
 }
-.liststyle2{
-    font-size:15px;color:#63B8FF;text-align:center;text-decoration: none;background: #F0F8FF;font-weight:bold;border-radius: 12px; border: 2px solid #C6E2FF;
+
+.liststyle2 {
+    font-size:15px;
+    color:#63B8FF;
+    text-align:center;
+    text-decoration: none;
+    background: #F0F8FF;
+    font-weight:bold;
+    border-radius: 12px;
+    border: 2px solid #C6E2FF;
 }
 
-.btn2{
+.btn2 {
     font-size:15px;
     color:#FF3030;
     text-align:center;
@@ -125,23 +150,24 @@
     border-radius: 5px;
     border: 2px solid #fff;
 }
-.space3{
+
+.space3 {
     margin-right: 80px;
 }
 
- .custom{
+ .custom {
     background-color:#BCD2EE!important; // for bg color
  }
 
-.space4{
+.space4 {
     margin-right: 20px;
 }
 
-.space5{
+.space5 {
     margin-bottom: 30px;
 }
 
-.color{
+.color {
     text-align: center;
     color:#FFF;
     font-weight: bold;
@@ -149,42 +175,37 @@
 
 }
 
-.color4{
+.color4 {
     text-align: center;
     color:#63B8FF;
     font-weight: bold;
     font-size:15px;
 }
 
-.color5{
+.color5 {
     text-align: center;
     color:#63B8FF;
     font-weight: bold;
-    font-size:20px;   
-}
+    font-size:20px;
 }
 
-.sizelist{
+.sizelist {
     height: 20px;
 }
 
-.color2{
+.color2 {
     color:#FFF;
-
-    font-weight: bold;  
-
     font-weight: bold;
-
 }
 
-.color3{
+.color3 {
     color:red;
     font-size:15px;
     font-weight: bold;
     text-align: center;
 }
 
-.btn3{
+.btn3 {
     font-size:30px;
     color:#63B8FF;
     text-align:center;
@@ -194,23 +215,24 @@
     border: 2px solid #C6E2FF;
     background-color: #daf0fe;
 }
+
 .space6 {
     margin-bottom:50px
 }
+
 .spacetop {
     margin-bottom:100px;
 }
+
 .spacetop2 {
     margin-bottom:60px;
 }
+
 .item.item-trns {
-
-    color: #FFF; 
-
     color: #FFF;
-
     font-weight: bold;
 }
+
 .footer {
     background: url(../data/img/background1.png) no-repeat center top !important;
 }
@@ -218,10 +240,12 @@
     border-radius: 30px;
     border: 2px solid #C6E2FF;
 }
+
 .center {
     margin: auto;
     width: 60%;
 }
+
 #wrapper2 {
     width: 270px;
     margin: 0 auto;
@@ -233,7 +257,7 @@
 }
 
 @media (max-width: 768px) {
-    .circle2{
+    .circle2 {
         display:block;
         width:70px;
         height:70px;
@@ -248,19 +272,24 @@
         background:#F0F8FF;
         font-weight:bold
     }
-    .circle3{
+
+    .circle3 {
         width:100%;
     }
-    .circle{
+
+    .circle {
         width:100%;
     }
+
     .image {
         height: 190px; //230
         border: 2px solid #C6E2FF;
     }
-    .spacetop{
+
+    .spacetop {
         margin-top: 10px;
     }
+
     #wrapper3 {
         width: 500px;
         margin: 0 auto;
@@ -268,10 +297,11 @@
 }
 
 @media (min-width: 768px) {
-    .circle{
+    .circle {
         width:100%;
     }
-    .circle2{
+
+    .circle2 {
         display:block;
         width:85px;
         height:85px;
@@ -285,10 +315,12 @@
         text-shadow:0 1px 0 #C6E2FF;
         font-weight:bold
     }
-    .circle3{
+
+    .circle3 {
         width:100%;
     }
-    .image{
+
+    .image {
         height: 330px;
         width: 330px;
         border: 2px solid #C6E2FF;
@@ -298,17 +330,18 @@
         width: 800px;
         margin: 0 auto;
     }
-    .space3{
+
+    .space3 {
         margin-right: 400px;
     }
-    .spacetop{
+
+    .spacetop {
         margin-top: 20px;
     }
-
 }
 
 @media (min-width: 992px) {
-    .circle2{
+    .circle2 {
         display:block;
         width:90px;
         height:90px;
@@ -323,13 +356,16 @@
         background:#F0F8FF;
         font-weight:bold
     }
-    .circle3{
+
+    .circle3 {
         width:100%;
     }
-    .circle{
+
+    .circle {
         width:100%;
     }
-    .image{
+
+    .image {
         height: 230px;
         width:230px;
         border: 2px solid #C6E2FF;
@@ -337,21 +373,41 @@
 }
 
 @media (min-width: 1200px) {
-
-  .circle{width:100%;}
-    .circle2{display:block;width:90px;height:90px;border-radius:64px;border:4px double #C6E2FF;font-size:40px;color:#C6E2FF;line-height:90px;text-align:center;text-decoration:none;text-shadow:0 1px 0 #C6E2FF;background:#F0F8FF; font-weight:bold} 
-    .circle3{width:100%;} 
-.image{
-    height: 230px;
-    width:230px;
-    border: 2px solid #C6E2FF;
-}
-
-
-  .circle{
+  .circle {
       width:100%;
   }
-  .circle2{
+
+  .circle2 {
+        display:
+        block;width:90px;
+        height:90px;
+        border-radius:64px;
+        border:4px double #C6E2FF;
+        font-size:40px;
+        color:#C6E2FF;
+        line-height:90px;
+        text-align:center;
+        text-decoration:none;
+        text-shadow:0 1px 0 #C6E2FF;
+        background:#F0F8FF;
+        font-weight:bold
+    }
+
+    .circle3 {
+        width:100%;
+    }
+
+    .image {
+        height: 230px;
+        width:230px;
+        border: 2px solid #C6E2FF;
+    }
+
+    .circle {
+        width:100%;
+    }
+
+    .circle2 {
       display:block;
       width:90px;
       height:90px;
@@ -365,21 +421,22 @@
       text-shadow:0 1px 0 #C6E2FF;
       background:#F0F8FF;
       font-weight:bold
-  }
-  .circle3{
-      width:100%;
-  }
-  .image{
-      height: 230px;
-      width: 230px;
-      border: 2px solid #C6E2FF;
-  }
+    }
 
+    .circle3 {
+        width:100%;
+    }
+
+    .image {
+        height: 230px;
+        width: 230px;
+        border: 2px solid #C6E2FF;
+    }
 }
 
 /*media query for iphone 5*/
-@media (max-width: 360px){*/
-    .circle2{
+@media (max-width: 360px) {
+    .circle2 {
         display:block;
         width:60px;
         height:60px;
@@ -394,7 +451,8 @@
         background:#F0F8FF;
         font-weight:bold
     }
-    .circle3{
+
+    .circle3 {
         display:block;
         width:60px;
         height:60px;
@@ -409,7 +467,8 @@
         background:#F0F8FF;
         font-weight:bold
     }
-    .circle{
+
+    .circle {
         display:block;
         width:60px;
         height:60px;
@@ -424,70 +483,80 @@
         background:#F0F8FF;
         font-weight:bold
     }
+
     #wrapper3 {
         width: 330px;
         margin: 0 auto;
     }
-    .image{
+
+    .image {
         height: 180px;
         width: 180px;
         border: 2px solid #C6E2FF;
     }
+
     #wrapper2 {
         width: 260px;
         margin: 0 auto;
     }
+
     .spacetop {
         margin-bottom: 40px;
         margin-top: 10px;
     }
 }
 
-#wrapper2{
-width: 200px;
-margin: 0 auto;
-}
-.spacetop {margin-bottom:50px;}
-}
+#wrapper2 {
+    width: 200px;
+    margin: 0 auto;
+    }
+
+.spacetop {
+    margin-bottom:50px;
+    }
+} /* what does that close */
 
 /* media query for ipad */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){
-#wrapper{
-    width: 400px;
-    margin: 0 auto;
-}
-.color{
-    text-align: center;
-    color:#FFF;
-    font-weight: bold;
-    font-size:30px;
-    
-}
-.color2{
-    color:#FFF;
-    font-weight: bold;  
-    font-size:30px;
-}
-.liststyle{
-    height:50px;line-height: 50px;font-size:20px;color:#63B8FF;text-align:center;text-decoration: none;background: #F0F8FF;font-weight:bold;border-radius: 12px; border: 2px solid #C6E2FF;margin-bottom: 30px;
-}
-
-  .circle{
-      display:block;
-      width:90px;
-      height:130px;
-      border-radius:64px;
-      border:4px double #C6E2FF;
-      font-size:40px;
-      color:#C6E2FF;
-      line-height:90px;
-      text-align:center;
-      text-decoration:none;
-      text-shadow:0 1px 0 #C6E2FF;
-      background:#F0F8FF;
-      font-weight:bold
+    #wrapper {
+        width: 400px;
+        margin: 0 auto;
     }
-    .circle2{
+
+    .color {
+        text-align: center;
+        color:#FFF;
+        font-weight: bold;
+        font-size:30px;
+    }
+
+    .color2 {
+        color:#FFF;
+        font-weight: bold;
+        font-size:30px;
+    }
+
+    .liststyle {
+        height:50px;line-height: 50px;font-size:20px;color:#63B8FF;text-align:center;text-decoration: none;background: #F0F8FF;font-weight:bold;border-radius: 12px; border: 2px solid #C6E2FF;margin-bottom: 30px;
+    }
+
+    .circle {
+        display:block;
+        width:90px;
+        height:130px;
+        border-radius:64px;
+        border:4px double #C6E2FF;
+        font-size:40px;
+        color:#C6E2FF;
+        line-height:90px;
+        text-align:center;
+        text-decoration:none;
+        text-shadow:0 1px 0 #C6E2FF;
+        background:#F0F8FF;
+        font-weight:bold
+    }
+
+    .circle2 {
         display:block;
         width:130px;
         height:130px;
@@ -502,30 +571,36 @@ margin: 0 auto;
         background:#F0F8FF;
         font-weight:bold
     }
-    .circle3{
+
+    .circle3 {
         width:100%;
     }
-    .image{
+
+    .image {
         height: 400px;
         width:  400px;
         border: 2px solid #C6E2FF;
     }
+
     #wrapper2 {
         width: 400px;
         margin: 0 auto;
     }
-    .color{
+
+    .color {
         text-align: center;
         color:#FFF;
         font-weight: bold;
         font-size:30px;
     }
-    .color2{
+
+    .color2 {
         color:#FFF;
         font-weight: bold;
         font-size:30px;
     }
-    .liststyle{
+    
+    .liststyle {
         height:50px;
         line-height: 50px;
         font-size:20px;
