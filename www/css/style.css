@@ -1,4 +1,4 @@
-    .footer-button a.button.button-full {
+.footer-button a.button.button-full {
     width:100%;
     margin-top: 0
 }
@@ -500,21 +500,15 @@
         margin: 0 auto;
     }
 
+    .space6 {
+        margin-bottom:25px
+    }
     .spacetop {
-        margin-bottom: 40px;
-        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-top: 15px;
     }
 }
 
-#wrapper2 {
-    width: 200px;
-    margin: 0 auto;
-    }
-
-.spacetop {
-    margin-bottom:50px;
-    }
-} /* what does that close */
 
 /* media query for ipad */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){
@@ -599,7 +593,7 @@
         font-weight: bold;
         font-size:30px;
     }
-    
+
     .liststyle {
         height:50px;
         line-height: 50px;
