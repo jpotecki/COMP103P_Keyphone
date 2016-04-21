@@ -4,7 +4,7 @@
 }
 
 .pane {
-    background:url(../data/img/background1.png) no-repeat center center fixed;
+    background:url(../app-img/background1.png) no-repeat center fixed;
     background-size: cover;
 }
 
@@ -234,7 +234,7 @@
 }
 
 .footer {
-    background: url(../data/img/background1.png) no-repeat center top !important;
+    background:url(../app-img/background1.png) no-repeat center fixed;
 }
 .image {
     border-radius: 30px;
