@@ -82,16 +82,16 @@ angular.module('app.routes', [])
     }
   })
 
-  .state('app.settings', {
-    url: '/settings',
-    views : {
-        'menuContent' : {
-            templateUrl: 'templates/settings.html',
-            controller: 'settingsCtrl'
-        }
-    }
-  })
-
+  // .state('app.settings', {
+  //   url: '/settings',
+  //   views : {
+  //       'menuContent' : {
+  //           templateUrl: 'templates/settings.html',
+  //           controller: 'settingsCtrl'
+  //       }
+  //   }
+  // })
+  
   .state('app.editList', {
     url: '/editList/:ListID',
     views : {
