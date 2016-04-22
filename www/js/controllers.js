@@ -224,14 +224,14 @@ angular.module('app.controllers', [])
             $localstorage.saveData(data);
         }
         // check if speakCheck should be done
-        var settings = $localstorage.getObject('settings');
+        //var settings = $localstorage.getObject('settings');
         // check if user has an active speakCheck, if so
         // go to speakcheck page
-        if (settings.speakCheck){
+        //if (settings.speakCheck){
             $state.transitionTo('app.speakCheck', {id : index});
-        } else {
-            $state.transitionTo('app.gamePad', null, {reload: true, notify:true});
-        }
+        //} else {
+        //    $state.transitionTo('app.gamePad', null, {reload: true, notify:true});
+        //}
     }
 })
 
@@ -400,11 +400,11 @@ angular.module('app.controllers', [])
             name : $scope.newList.name,
             words : words
         });
-        $state.go('app.settings');
+        $state.go('app.manage');
     };
 
     $scope.abort = function() {
-        $state.go('app.settings');
+        $state.go('app.manage');
     }
 })
 
@@ -444,11 +444,11 @@ angular.module('app.controllers', [])
         }
         $scope.list.words = words;
         $localstorage.setObject($scope.list._id, $scope.list);
-        $state.go("app.settings");
+        $state.go("app.manage");
     }
     $scope.abort = function() {
         $scope.list = ''
-        $state.go("app.settings");
+        $state.go("app.manage");
     }
 })
 
