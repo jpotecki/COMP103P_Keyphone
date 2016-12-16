@@ -52,7 +52,7 @@ angular.module('app.controllers', [])
         // under the key 'current_game'
         var game = GameDataCreator.createGameData($localstorage.getList(id));
         var data = $localstorage.getData();
-        [data, index] = $key_data.addGame(data, game);
+        data, index = $key_data.addGame(data, game);
         game.index = index;
         console.log(index);
         data = $key_data.updateGame(data, game);
